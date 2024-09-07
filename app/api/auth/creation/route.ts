@@ -34,6 +34,6 @@ export async function GET() {
   return NextResponse.redirect(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/"
-      : "https://rostik-ecommerce-shoe.vercel.app/"
+      : `${process.env.VERCEL_APP_URL}/`
   );
 }
