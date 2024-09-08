@@ -10,6 +10,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { redis } from "@/app/lib/redis";
 import { Cart } from "@/app/lib/interfaces";
+import { ModeToggler } from "./ModeToggler";
 
 export async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -31,6 +32,9 @@ export async function Navbar() {
       </div>
 
       <div className="flex items-center">
+        <div className="mr-3">
+          <ModeToggler />
+        </div>
         {user ? (
           <>
             <Link href="/bag" className="group p-2 flex items-center mr-2">
