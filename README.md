@@ -24,4 +24,4 @@ An advanced E-Commerce Store that includes both an Admin Dashboard for managing 
 
 ### Deployment
 
-The project is deployed [here](https://ecommerce-shop-next.vercel.app/).
+The project is deployed [here](https://goodly-millionaire.vercel.app/).
